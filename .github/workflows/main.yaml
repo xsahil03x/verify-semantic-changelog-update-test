@@ -1,0 +1,17 @@
+name: 'Verify Semantic Changelog Update'
+on:
+  pull_request_target:
+    types:
+      - opened
+      - edited
+      - synchronize
+    branches:
+      - main
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: xsahil03x/verify-semantic-changelog-update@test/test
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
