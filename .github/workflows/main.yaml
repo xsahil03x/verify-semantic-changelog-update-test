@@ -14,11 +14,6 @@ jobs:
     steps:
       - uses: xsahil03x/verify-semantic-changelog-update@test/test
         with:
-          scopes: >-
-            {
-              ui: src
-              llc: src
-              core: src
-            }
+          scopes: '{"ui": "src", "llc": "src", "core": "src"}'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
