@@ -14,8 +14,7 @@ jobs:
     steps:
       - uses: xsahil03x/verify-semantic-changelog-update@test/test
         with:
-          scopes: 
----
+          scopes: |
             ui: src
             llc: src
         env:
