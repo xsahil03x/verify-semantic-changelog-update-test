@@ -12,6 +12,6 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-      - uses: GetStream/verify-semantic-changelog-update@test/test
+      - uses: GetStream/verify-semantic-changelog-update@main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
