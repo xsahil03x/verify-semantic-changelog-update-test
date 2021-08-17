@@ -15,6 +15,5 @@ jobs:
       - uses: xsahil03x/verify-semantic-changelog-update@test/test
         with:
           scopes: '{"ui": "src", "llc": "src", "core": "src", "repo": "."}'
-          path: main.js
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
