@@ -16,7 +16,8 @@ jobs:
         with:
           scopes: |
             {
-              "ui": "src"
+              "ui": "src",
+              "repo": "."
             }
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
